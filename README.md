@@ -77,6 +77,8 @@ Recall measures the ratio of true positive predictions to the actual positives. 
 ## 4. F1-Score
 F1-Score is a metric that provides a balance between precision and recall. It is useful when both precision and recall are important.
 
+## 5. Confusion Matrix
+The confusion matrix visualizes the model's correct and incorrect predictions for each class. It helps to understand the strengths and weaknesses of the model.
 
 ## Results
 - An accuracy of %X was achieved on the validation set, demonstrating the model's effectiveness in classifying fish species.
@@ -103,6 +105,3 @@ fish-dataset/data
 - Special thanks to all contributors and the community for their continuous support.
 
 
-
-## 6. Confusion Matrix
-The confusion matrix visualizes the model's correct and incorrect predictions for each class. It helps to understand the strengths and weaknesses of the model.
