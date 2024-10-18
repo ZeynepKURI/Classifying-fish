@@ -100,8 +100,7 @@ This project highlights the application of deep learning techniques to image cla
 3. Run the project using Jupyter Notebook or Python scripts.
 
 ## Acknowledgments
-- A Large Scale Fish Dataset:  https://www.kaggle.com/datasets/crowww/a-large-scale-
-fish-dataset/data 
+- A Large Scale Fish Dataset:  https://www.kaggle.com/datasets/crowww/a-large-scale-fish-dataset/data 
 - Special thanks to all contributors and the community for their continuous support.
 
 
