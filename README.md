@@ -24,6 +24,33 @@ The dataset has been divided into three main parts: training, validation, and te
 
 The data splitting was accomplished using the `train_test_split` function, ensuring a balanced selection of data points in each set.
 
+## Data Augmentation
+
+To enhance the model's generalization capability and improve performance, various data augmentation techniques were applied to the training dataset. These techniques are as follows:
+
+1. **Rescale**: 
+   - `rescale=1/255`: Scales the pixel values of the images from a range of 0-255 to a range of 0-1, normalizing the input data.
+
+2. **Rotation Range**: 
+   - `rotation_range=40`: Randomly rotates the images by an angle between 0 and 40 degrees, introducing variability in the training data.
+
+3. **Width Shift Range**: 
+   - `width_shift_range=0.2`: Randomly shifts the images along the width by up to 20%, allowing the model to learn from different horizontal positions of the objects.
+
+4. **Height Shift Range**: 
+   - `height_shift_range=0.2`: Randomly shifts the images along the height by up to 20%, enabling the model to handle vertical displacements.
+
+5. **Shear Range**: 
+   - `shear_range=0.2`: Applies random shear transformations to the images, altering their shape and perspective.
+
+6. **Zoom Range**: 
+   - `zoom_range=0.2`: Randomly zooms in or out on the images by up to 20%, creating variations in the scale of the fish.
+
+7. **Horizontal Flip**: 
+   - `horizontal_flip=True`: Randomly flips the images horizontally, enhancing the diversity of the training set by reflecting the images.
+
+These augmentation techniques were essential in preventing overfitting and improving the model's ability to generalize to new, unseen data.
+
 2. **Model Architecture**:
    - A CNN architecture was designed to extract relevant features from images.
    - The model architecture consists of the following components:
@@ -63,8 +90,7 @@ This project highlights the application of deep learning techniques to image cla
 - TensorFlow
 - Keras
 - Matplotlib
-- Pandas
-- NumPy
+
 
 ## How to Run
 1. Clone the repository.
@@ -72,13 +98,9 @@ This project highlights the application of deep learning techniques to image cla
 3. Run the project using Jupyter Notebook or Python scripts.
 
 ## Acknowledgments
-- A Large Scale Fish Dataset: [Link to Dataset]
+- A Large Scale Fish Dataset:  https://www.kaggle.com/datasets/crowww/a-large-scale-
+fish-dataset/data 
 - Special thanks to all contributors and the community for their continuous support.
-
-
-
-
-
 
 
 
